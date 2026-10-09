@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>湖南文理学院导航菜单</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .nav{
+            background:#0055cc;
+            display:flex;
+            align-items:center;
+        }
+        .nav .title{
+            color:#fff;
+            font-size:20px;
+            font-weight:bold;
+            padding:16px 20px;
+            white-space:nowrap;
+        }
+        .nav>ul{
+            display:flex;
+        }
+        .nav>ul>li{
+            position:relative;
+        }
+        .nav>ul>li>a{
+            display:block;
+            padding:16px 22px;
+            color:#fff;
+            text-decoration:none;
+            font-size:17px;
+        }
+        .nav>ul>li>a:hover{
+            background:#003399;
+        }
+        /* 二级菜单样式 */
+        .nav>ul>li>ul{
+            position:absolute;
+            top:100%;
+            left:0;
+            width:260px;
+            background:#0055cc;
+            display:none;
+        }
+        .nav>ul>li>ul>li>a{
+            padding:10px 22px;
+            display:block;
+            color:#fff;
+            text-decoration:none;
+        }
+        .nav>ul>li>ul>li>a:hover{
+            background:#003399;
+        }
+        .nav>ul>li:hover>ul{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="title">欢迎访问湖南文理学院</div>
+        <ul>
+            <li>
+                <a href="#">教学院（部）</a>
+                <ul>
+                    <li><a href="#">马克思主义学院</a></li>
+                    <li><a href="#">教育科学学院</a></li>
+                    <li><a href="#">文史与法学学院</a></li>
+                    <li><a href="#">外国语学院</a></li>
+                    <li><a href="#">经济与管理学院</a></li>
+                    <li><a href="#">计算机与电气工程学院</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">党群机构</a>
+                <ul>
+                    <li><a href="#">纪委办公室</a></li>
+                    <li><a href="#">党政办公室</a></li>
+                    <li><a href="#">组织部、党校</a></li>
+                    <li><a href="#">宣传统战部</a></li>
+                    <li><a href="#">学生工作部</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">行政教辅机构</a>
+                <ul>
+                    <li><a href="#">教务处</a></li>
+                    <li><a href="#">研究生院</a></li>
+                    <li><a href="#">招生就业处</a></li>
+                    <li><a href="#">财务处</a></li>
+                    <li><a href="#">图书馆</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">信息系统</a>
+                <ul>
+                    <li><a href="#">办事大厅</a></li>
+                    <li><a href="#">教务系统</a></li>
+                    <li><a href="#">科研系统</a></li>
+                    <li><a href="#">电子邮箱</a></li>
+                </ul>
+            </li>
+            <li><a href="#">国际交流</a></li>
+            <li><a href="#">数字图书馆</a></li>
+            <li><a href="#">采购信息</a></li>
+            <li><a href="#">办事大厅</a></li>
+        </ul>
+    </div>
+</body>
+</html>
